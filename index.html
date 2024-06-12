@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Include Swiper CSS -->
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("W8KK0-Rh9tWIw9Fik");
+        })();
+        </script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">John Doe</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Website Profile Png 2.png" alt="Favour Igwezeke profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Favour Igwezeke</h1>
+        <p class="section__text__p2">Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Favour Igwezeke</h1>
+      <div class="text_container">
+        <p>A data analyst with a background in pharmacy. I'm currently pursuing a Doctor of Pharmacy (PharmD) degree at the University of Nigeria, set to graduate in 2026. My passion for data analytics was sparked by my love for mathematics and statistics and further fueled by an inspiring encounter with a fellow data scientist during my second year of pharmacy school.</p>
+        <p>To build my skills, I've completed online courses in data analytics, including certifications from Coursera and DataCamp. I actively participate in hackathons and am a member of various data science communities. I am particularly excited about predictive analytics and its ability to forecast trends and behaviors, with a strong interest in applying machine learning to personalized medicine and healthcare optimization.</p>
+        <p>Outside of my academic pursuits, I enjoy watching productivity and Notion videos, reading Wikipedia plots about my favorite movies, and imagining that I can play the guitar. My interest in science fiction fuels my imagination and creativity, which I believe is crucial in solving complex data problems. I also love exploring new technologies and staying updated with the latest trends in data science.</p>
+        <p>I am naturally curious and detail-oriented, traits that help me delve deep into data to uncover meaningful insights. My goal is to become a leading data scientist in the healthcare industry, contributing to groundbreaking projects that improve patient care.</p>
+      </div>
+    </section>
+    <section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">SkillSet</h1>
+  <p>I have a diverse set of skills in data analytics, spanning programming, databases, BI tools, and spreadsheets, which I have honed through various projects and certifications. Below is an overview of my expertise.</p>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <!-- Programming -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Programming</h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Python</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>R Language</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>SQL</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- Databases -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Databases</h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>PostgreSQL</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>MySQL Workbench</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img 
+             src="./assets/checkmark.png"
+             alt="Experience icon"
+             class="icon"
+             />
+             <div>
+                <h3>SQL Server</h3>
+                <p>Intermediate</p>
+             </div>
+          </article>
+        </div>
+      </div>
+      <!-- BI Tools -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">BI Tools</h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Tableau</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Power BI</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img 
+              src="./assets/checkmark.png" 
+              alt="Experience icon"
+              class="icon"
+              />
+              <div>
+                <h3>Looker Studio</h3>
+                <p>Basic</p>
+              </div>
+          </article>
+        </div>
+      </div>
+      <!-- Spreadsheets -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Spreadsheets</h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Excel</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Google Sheets</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+</section>
+<section id="projects">
+    <p class="section__text__p1">Browse Through My</p>
+    <h1 class="title_2">Projects</h1>
+    <p>Here are some of the projects I've worked on, showcasing my skills in data analytics and development. These projects reflect my ability to analyze data, create insightful visualizations, and develop effective solutions to complex problems.</p>
+    <div class="details_container">
+        <!-- Road Accident Analysis Using Power BI -->
+        <div class="subdetail_container">
+            <div class="article-container">
+                <img src="./assets/Analysis Of Road Accident Trends.jpg" class="project-img" alt="Analysis of Road Accident Trends"/>
+            </div>
+            <h2 class="project-title">Analysis of Road Accident Trends</h2>
+            <p>Analysis of road accident data using Power BI to identify trends and improve road safety.</p>
+            <div class="lang">
+                <small>Microsoft Power BI</small>
+            </div>
+            <div class="btn-container">
+                <button class="btn project-btn" onclick="location.href='https://github.com/'">View On Github</button>
+                <button class="btn project-btn" onclick="location.href='https://medium.com/'">Read On Medium</button>
+            </div>
+        </div>
+
+        <!-- Job Market Analysis with Power BI -->
+        <div class="subdetail_container">
+            <div class="article-container">
+                <img src="./assets/Job Market Analysis.jpg" class="project-img" alt="Job Market Analysis with Power BI"/>
+            </div>
+            <h2 class="project-title">Job Market Analysis</h2>
+            <p>Comprehensive analysis of the job market for data science roles using Power BI.</p>
+            <div class="lang">
+                <small>Microsoft Power BI</small>
+            </div>
+            <div class="btn-container">
+                <button class="btn project-btn" onclick="location.href='https://github.com/'">View On Github</button>
+                <button class="btn project-btn" onclick="location.href='https://medium.com/'">Read On Medium</button>
+            </div>
+        </div>
+
+        <!-- Competitor Sales Analysis with Power BI -->
+        <div class="subdetail_container">
+            <div class="article-container">
+                <img src="./assets/Competitor Sales Analysis.jpg" class="project-img" alt="Competitor Sales Analysis"/>
+            </div>
+            <h2 class="project-title">Competitor Sales Analysis</h2>
+            <p>Analysis of competitor sales for a fictional manufacturing company, Sintec, using Power BI.</p>
+            <div class="lang">
+                <small>Microsoft Power BI</small>
+            </div>
+            <div class="btn-container">
+                <button class="btn project-btn" onclick="location.href='https://github.com/yanny-alt/Competitor-Sales-Analysis-in-Power-BI'">View On Github</button>
+                <button class="btn project-btn" onclick="location.href='https://medium.com/'">Read On Medium</button>
+            </div>
+        </div>
+
+        <!-- Just-in-Time Supply Chain Analysis with Power BI -->
+        <div class="subdetail_container">
+            <div class="article-container">
+                <img src="./assets/just in time supply chain analysis.jpg" class="project-img" alt="Just-in-Time Supply Chain Analysis"/>
+            </div>
+            <h2 class="project-title">Just-in-Time Supply Chain Analysis</h2>
+            <p>Showcase of a comprehensive Supply Chain Analytics Dashboard developed with Power BI.</p>
+            <div class="lang">
+                <small>Microsoft Power BI</small>
+            </div>
+            <div class="btn-container">
+                <button class="btn project-btn" onclick="location.href='https://github.com/'">View On Github</button>
+                <button class="btn project-btn" onclick="location.href='https://medium.com/'">Read On Medium</button>
+            </div>
+        </div>
+
+        <!-- Atlas Labs HR Analytics Power BI Project -->
+        <div class="subdetail_container">
+            <div class="article-container">
+                <img src="./assets/HR Analytics.jpg" class="project-img" alt="Atlas Labs HR Analytics Power BI Project"/>
+            </div>
+            <h2 class="project-title">Atlas Labs HR Analysis</h2>
+            <p>Explore HR data with my Atlas Labs HR Analytics Power BI Project. I'm analyzing employee metrics, diving into attrition factors, and visualizing insights using Power BI.</p>
+            <div class="lang">
+                <small>Microsoft Power BI</small>
+            </div>
+            <div class="btn-container">
+                <button class="btn project-btn" onclick="location.href='https://github.com/'">View On Github</button>
+                <button class="btn project-btn" onclick="location.href='https://medium.com/'">Read On Medium</button>
+            </div>
+        </div>
+
+        <!-- Nashville Housing Dataset Cleaning Using PostgreSQL -->
+        <div class="subdetail_container">
+            <div class="article-container">
+                <img src="./assets/Nashville Housing.jpg" class="project-img" alt="Nashville Housing Dataset Cleaning"/>
+            </div>
+            <h2 class="project-title">Nashville Housing Dataset Cleaning</h2>
+            <p>In-Depth cleaning of Nashville housing dataset using PostgreSQL.</p>
+            <div class="lang">
+                <small>PostgreSQL</small>
+            </div>
+            <div class="btn-container">
+                <button class="btn project-btn" onclick="location.href='https://github.com/'">View On Github</button>
+                <button class="btn project-btn" onclick="location.href='https://medium.com/'">Read On Medium</button>
+            </div>
+        </div>
+
+        <!-- End-to-End Instacart Analysis Using PostgreSQL -->
+        <div class="subdetail_container">
+            <div class="article-container">
+                <img src="./assets/Retail Customer Behaviour and Market Basket Analysis.jpg" class="project-img" alt="End-to-End Instacart Analysis"/>
+            </div>
+            <h2 class="project-title"> Retail Customer Behavior and Market Basket Analysis</h2>
+            <p>Using PostgreSQL, I analyzed user behavior, identified market trends, and uncovered valuable insights for Instacart</p>
+            <div class="lang">
+                <small>PostgreSQL</small>
+            </div>
+            <div class="btn-container">
+                <button class="btn project-btn" onclick="location.href='https://github.com/'">View On Github</button>
+                <button class="btn project-btn" onclick="location.href='https://medium.com/'">Read On Medium</button>
+            </div>
+        </div>
+
+        <!-- MovieNow Rental Analysis -->
+        <div class="subdetail_container">
+            <div class="article-container">
+                <img src="./assets/MovieNow Rental Analysis.jpg" class="project-img" alt="MovieNow Rental Analysis"/>
+            </div>
+            <h2 class="project-title">MovieNow Rental Analysis</h2>
+            <p>In this project, I used PostgreSQL to analyze MovieNow's data, including customer preferences, movie ratings, and revenue. Key insights included identifying top-grossing movies, popular genres, and customer behavior patterns. This analysis supports MovieNow in making informed decisions about inventory management and customer engagement.</p>
+            <div class="lang">
+                <small>PostgreSQL</small>
+            </div>
+            <div class="btn-container">
+                <button class="btn project-btn" onclick="location.href='https://github.com/'">View On Github</button>
+                <button class="btn project-btn" onclick="location.href='https://medium.com/'">Read On Medium</button>
+            </div>
+        </div>
+
+        <!-- International Debt Statistics Analysis With PostgreSQL -->
+        <div class="subdetail_container">
+            <div class="article-container">
+                <img src="./assets/International Debt Statistics.jpg" class="project-img" alt="International Debt Statistics Analysis"/>
+            </div>
+            <h2 class="project-title">International Debt Statistics Analysis</h2>
+            <p>This project uses SQL to analyze international debt statistics from The World Bank. It explores the total debt owed by developing countries, identifies the country with the highest debt, and calculates the average debt across various indicators.</p>
+            <div class="lang">
+                <small>PostgreSQL</small>
+            </div>
+            <div class="btn-container">
+                <button class="btn project-btn" onclick="location.href='https://github.com/'">View On Github</button>
+                <button class="btn project-btn" onclick="location.href='https://medium.com/'">Read On Medium</button>
+            </div>
+        </div>
+
+        <!-- PostgreSQL Analysis of the World's Oldest Businesses -->
+        <div class="subdetail_container">
+            <div class="article-container">
+                <img src="./assets/World Oldest Businesses.jpg" class="project-img" alt="Analysis of the World's Oldest Businesses"/>
+            </div>
+            <h2 class="project-title">PostgreSQL Analysis of the World's Oldest Businesses</h2>
+            <p>Analysis of a curated dataset to reveal the timeless footprints of the world's oldest businesses using PostgreSQL.</p>
+            <div class="lang">
+                <small>PostgreSQL</small>
+            </div>
+            <div class="btn-container">
+                <button class="btn project-btn" onclick="location.href='https://github.com/'">View On Github</button>
+                <button class="btn project-btn" onclick="location.href='https://medium.com/'">Read On Medium</button>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+</section>
+
+<section class="dashboard-section">
+    <div class="dashboard">
+        <p class="section__text__p1">View My Latest</p>
+      <h1 class="title_2">Dashboards</h1>
+      <p>Below are some of my most recent dashboard projects created with Power BI. These dashboards provide comprehensive insights and visualizations for various datasets and scenarios.</p>
+    </div>
+  
+    <div class="dashboard-grid">
+      <div class="card">
+        <div class="image-content">
+          <img src="./assets/Competitor Sales Analysis.jpg" alt="Sales Performance Dashboard" class="card-img" />
+        </div>
+        <div class="card-content">
+          <h2 class="name">Sales Performance Dashboard</h2>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiNmFkZDgzYzMtN2VmNS00M2Y1LTlhZDYtNDc0YWM3NTZlYjYxIiwidCI6ImE4NDA4NTg4LWZlYzAtNDE3OC1hYjI3LWFiNmI4MjFkYmI5ZiJ9" target="_blank" class="pri-btn">View</a>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="image-content">
+          <img src="./assets/Analysis Of Road Accident Trends.jpg" alt="Customer Insights Dashboard" class="card-img" />
+        </div>
+        <div class="card-content">
+          <h2 class="name">Customer Insights Dashboard</h2>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiMjRhMjc2NjItYWM2YS00NGI0LTkzODktMjBlZDQ1ODczOWFjIiwidCI6ImE4NDA4NTg4LWZlYzAtNDE3OC1hYjI3LWFiNmI4MjFkYmI5ZiJ9" target="_blank" class="pri-btn">View</a>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="image-content">
+          <img src="./assets/Dashboard3.jpg" alt="Financial Overview Dashboard" class="card-img" />
+        </div>
+        <div class="card-content">
+          <h2 class="name">Financial Overview Dashboard</h2>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiZmRhODFlNTQtZjZjNC00M2ZhLThmZDAtNzM0ZmMyZmU2YzQxIiwidCI6ImE4NDA4NTg4LWZlYzAtNDE3OC1hYjI3LWFiNmI4MjFkYmI5ZiJ9" target="_blank" class="pri-btn">View</a>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<section class="certifications-section">
+    <div class="certifications">
+        <p class="section__text__p1">Check Out My</p>
+      <h1 class="title_2">Certifications</h1>
+      <p>Here are some of my most significant certifications that demonstrate my skills and expertise in various domains.</p>
+    </div>
+  
+    <div class="certifications-grid">
+      <div class="certification-card">
+        <div class="certification-image-content">
+          <img src="./assets/Analysis Of Road Accident Trends.jpg" alt="Certification 1" class="certification-img" />
+        </div>
+        <div class="certification-content">
+          <h2 class="certification-title">Certification Title 1</h2>
+          <a href="./assets/Certification1.jpg" target="_blank" class="certification-btn"></a>
+        </div>
+        <div class="certification-hover-content">
+          <p>Issuing Organization: Organization 1</p>
+          <p>Date of Issuance: Jan 2024</p>
+          <a href="https://example.com/verify1" target="_blank" class="verify-btn">Verify</a>
+        </div>
+      </div>
+  
+      <div class="certification-card">
+        <div class="certification-image-content">
+          <img src="./assets/Certification2.jpg" alt="Certification 2" class="certification-img" />
+        </div>
+        <div class="certification-content">
+          <h2 class="certification-title">Certification Title 2</h2>
+          <a href="./assets/Certification2.jpg" target="_blank" class="certification-btn"></a>
+        </div>
+        <div class="certification-hover-content">
+          <p>Issuing Organization: Organization 2</p>
+          <p>Date of Issuance: Feb 2024</p>
+          <a href="https://example.com/verify2" target="_blank" class="verify-btn">Verify</a>
+        </div>
+      </div>
+  
+      <div class="certification-card">
+        <div class="certification-image-content">
+          <img src="./assets/Certification3.jpg" alt="Certification 3" class="certification-img" />
+        </div>
+        <div class="certification-content">
+          <h2 class="certification-title">Certification Title 3</h2>
+          <a href="./assets/Certification3.jpg" target="_blank" class="certification-btn"></a>
+        </div>
+        <div class="certification-hover-content">
+          <p>Issuing Organization: Organization 3</p>
+          <p>Date of Issuance: Mar 2024</p>
+          <a href="https://example.com/verify3" target="_blank" class="verify-btn">Verify</a>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<section id="other-platforms">
+    <div class="platforms">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title_2">Other Platforms</h1>
+    </div>
+    <div class="platforms-grid">
+      <div class="platform-card">
+        <div class="platform-image-content">
+          <img src="./assets/github picture.jpg" alt="Github" class="platform-img" />
+        </div>
+        <div class="platform-content">
+          <h2 class="platform-title">Github</h2>
+          <a href="https://github.com/lanre-akinbo" target="_blank" class="platform-btn"></a>
+        </div>
+        <div class="platform-hover-content">
+          <p>Get all my source code here</p>
+          <a href="https://github.com/lanre-akinbo" target="_blank" class="visit-btn">Visit</a>
+        </div>
+      </div>
+  
+      <div class="platform-card">
+        <div class="platform-image-content">
+          <img src="./assets/medium picture.png" alt="Medium" class="platform-img" />
+        </div>
+        <div class="platform-content">
+          <h2 class="platform-title">Medium</h2>
+          <a href="https://medium.com/@olanreakinbo" target="_blank" class="platform-btn"></a>
+        </div>
+        <div class="platform-hover-content">
+          <p>Catch my thoughts and insights on data</p>
+          <a href="https://medium.com/@olanreakinbo" target="_blank" class="visit-btn">Visit</a>
+        </div>
+      </div>
+  
+      <div class="platform-card">
+        <div class="platform-image-content">
+          <img src="./assets/tableau picture.jpg" alt="Tableau" class="platform-img" />
+        </div>
+        <div class="platform-content">
+          <h2 class="platform-title">Tableau</h2>
+          <a href="https://public.tableau.com/app/profile/lanre.akinbo3358/vizzes" target="_blank" class="platform-btn"></a>
+        </div>
+        <div class="platform-hover-content">
+          <p>Check out my data vizzes on Tableau</p>
+          <a href="https://public.tableau.com/app/profile/lanre.akinbo3358/vizzes" target="_blank" class="visit-btn">Visit</a>
+        </div>
+      </div>
+    </div>
+</section>
+   
+  
+
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:thefavourokechukwu@gmail.com">favourokechukwu@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
