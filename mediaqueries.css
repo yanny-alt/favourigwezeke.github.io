@@ -7,8 +7,12 @@
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #projects,
+  #dashboards {
     height: fit-content;
+  }
+  .dashboard-section {
+    padding: 20px;
   }
 }
 
@@ -125,10 +129,14 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 0.25rem;   
-}
+  }
 
   .contact-card {
     margin-bottom: 1.5rem;
+  }
+
+  .dashboard-section {
+    padding: 10px; /* Adjust padding for smaller screens */
   }
 }
 

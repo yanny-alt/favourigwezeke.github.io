@@ -437,9 +437,9 @@ article .icon {
 
 
 /* DASHBOARD SECTION */
-.dashboard-section {
+#dashboards {
   padding: 50px 3%;
-  background: var(--bg-body);
+  text-align: center;
 }
 
 .dashboard {
@@ -451,10 +451,11 @@ article .icon {
   color: var(--secondary);
 }
 
-.dashboard-grid {
+.details_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  margin-top: 2rem;
 }
 
 .card {
@@ -504,6 +505,7 @@ article .icon {
 .pri-btn:hover {
   background-color: var(--primary-dark);
 }
+
 
 /* CERTIFICATIONS SECTION */
 .certifications-section {
