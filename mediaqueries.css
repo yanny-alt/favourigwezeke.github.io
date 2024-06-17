@@ -9,7 +9,8 @@
   #contact,
   #projects,
   #dashboards,
-  #about {
+  #about,
+  #courses {
     height: fit-content;
   }
   .dashboard-section {
