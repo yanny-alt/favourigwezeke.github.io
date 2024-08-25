@@ -10,7 +10,8 @@
   #projects,
   #dashboards,
   #about,
-  #courses {
+  #courses,
+  #certifications {
     height: fit-content;
   }
   .dashboard-section {

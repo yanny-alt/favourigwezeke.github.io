@@ -489,7 +489,7 @@ article .icon {
 
 
 /* CERTIFICATIONS SECTION */
-.certifications-section {
+#certifications {
   padding: 50px 3%;
   background: var(--bg-body);
 }
